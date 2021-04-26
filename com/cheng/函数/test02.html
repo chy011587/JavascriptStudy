@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <style>
+
+        input{
+            width: 50px;
+        }
+    </style>
+    <script>
+        function calc() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            num1 = parseFloat(num1); //解析
+            num2 = parseFloat(num2); //解析
+            var result = num1 + num2;
+            document.getElementById("result").value = result;
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="num1"> +
+<input type="text" id="num2"> =
+<input type="text" id="result">
+<input type="button" value="运算" onclick="calc()" >
+</body>
+</html>

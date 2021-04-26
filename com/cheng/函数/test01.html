@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+    <script>
+        <!--无参数-->
+        function f() {
+            document.write("这是由函数打印出来的字");
+        }
+        f();
+        document.write("<br>")
+    </script>
+
+    <script>
+        <!--带参数-->
+        function f1(message) {
+            document.write(message)
+        }
+        f1("第一句话");
+        f1("<br>")
+        f1("第二句话");
+    </script>
+
+    <script>
+        <!--计算-->
+        document.write("<br>");
+        function f2(message) {
+            document.write(message)
+        }
+        function clos(x, y) {
+            return x + y;
+        }
+        var sum = clos(10,20);
+        f2(sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
